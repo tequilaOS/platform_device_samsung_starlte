@@ -32,6 +32,9 @@ TARGET_BOOT_ANIMATION_RES := 1440
 ## Inherit some common TequilaOS stuff
 $(call inherit-product, vendor/tequila/config/common_full_phone.mk)
 
+##Dolby 
+TARGET_HAVE_SAMSUNG_DAP := true
+
 ## Device identifier, this must come after all inclusions
 PRODUCT_NAME := tequila_starlte
 PRODUCT_DEVICE := starlte
