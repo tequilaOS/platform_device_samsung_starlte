@@ -34,6 +34,8 @@ $(call inherit-product, vendor/tequila/config/common_full_phone.mk)
 
 ##Dolby 
 TARGET_HAVE_SAMSUNG_DAP := true
+PRODUCT_COPY_FILES += \
+$(TARGET_DEVICE_DIR)/configs/dolby/dax-default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dolby/dax-default.xml
 
 ## Device identifier, this must come after all inclusions
 PRODUCT_NAME := tequila_starlte
